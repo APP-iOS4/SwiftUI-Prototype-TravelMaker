@@ -11,7 +11,7 @@ struct ProfileProductsView: View {
     var body: some View {
         
         NavigationStack {
-            NavigationLink(destination: ProfileView(), label: {
+            NavigationLink(destination: DetailView(), label: {
                 VStack(alignment: .leading) {
                     Image("yeomiji")
                         .resizable()
@@ -22,12 +22,12 @@ struct ProfileProductsView: View {
                         .foregroundStyle(.tmBlack)
                         .fontWeight(.bold)
                         .font(.system(size: 20))
-                    Button(action: {
-                        
-                    }, label: {
-                       ButtonBackground(text: "가이드 상품 추가하기")
-                    })
-                    .padding(.top, 50)
+//                    Button(action: {
+//                        
+//                    }, label: {
+//                       ButtonBackground(text: "가이드 상품 추가하기")
+//                    })
+//                    .padding(.top, 50)
                     Spacer()
                     
                 }
