@@ -10,6 +10,8 @@ import SwiftUI
 struct MessageDetailView: View {
     var messageModel: MessageModel
     @State var write: String = ""
+    @State var sentList: [SingleMessageModel] = []
+    // @State var sentDate: [String] = []
     
     var body: some View {
         VStack(spacing: 0){
@@ -39,7 +41,27 @@ struct MessageDetailView: View {
                             
                         }
                         .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
-                        .id(message)
+        
+                    }
+                }
+                LazyVStack(alignment: .trailing){
+                    ForEach(sentList, id: \.self) { message in
+                        VStack(alignment: .trailing){
+                            ZStack(alignment: .leading){
+                                RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
+                                    .foregroundStyle(.tmYellow2)
+                                Text("\(message.message)")
+                                    .foregroundStyle(.tmBlack)
+                                    .padding(10)
+                            }
+                            .frame(width: 250)
+                            
+                            Text("\(message.date)")
+                                .font(.subheadline)
+                                .foregroundStyle(.tmGray)
+                        }
+                        .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+                        
                     }
                 }
             }
@@ -48,8 +70,20 @@ struct MessageDetailView: View {
             Divider()
             
             HStack{
-                TextField("메시지를 입력하세요", text: $write)
+                TextField("메시지를 입력하세요", text: $write, axis: .vertical)
                 Button{
+                    if !write.isEmpty {
+                        let date = Date()
+                        
+                        let formatter = DateFormatter()
+                        formatter.dateFormat = "YYYY/M/dd HH:mm"
+                        
+                        let dateFormat: String = formatter.string(from: date)
+                        
+                        sentList.append(SingleMessageModel(message: write, date: dateFormat))
+                    }
+                    
+                    
                     write = ""
                 } label: {
                     ButtonBackground(text: "전송")
