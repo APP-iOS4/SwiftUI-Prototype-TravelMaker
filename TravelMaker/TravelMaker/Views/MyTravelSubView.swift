@@ -12,7 +12,7 @@ struct MyTravelSubView: View {
     var price: Int = 130000
     var image: String = "subway"
     var body: some View {
-        VStack{
+        VStack {
             HStack {
                 Image("\(image)")
                     .resizable()
@@ -20,7 +20,7 @@ struct MyTravelSubView: View {
                     .clipShape(Circle())
                     .frame(width: 80, height: 80)
                     .padding(.trailing, 20)
-                VStack {
+                VStack(alignment: .leading) {
                     Text("\(name)")
                         //.lineLimit(1)
                         .foregroundStyle(.tmBlack)
