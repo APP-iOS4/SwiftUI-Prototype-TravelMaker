@@ -66,8 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				9B47675A2B84253B0093969F /* TravelMakerApp.swift */,
-				9B47675C2B84253B0093969F /* ContentView.swift */,
-				9B47676F2B8431940093969F /* ButtonBackground.swift */,
+				9B79DB762B843922009A6BFD /* Views */,
 				9B79DB712B8435C9009A6BFD /* Images */,
 				9B47676E2B8426510093969F /* Models */,
 				9B47675E2B84253C0093969F /* Assets.xcassets */,
@@ -102,6 +101,15 @@
 				9B79DB6F2B8435C5009A6BFD /* subway.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		9B79DB762B843922009A6BFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B47675C2B84253B0093969F /* ContentView.swift */,
+				9B47676F2B8431940093969F /* ButtonBackground.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
