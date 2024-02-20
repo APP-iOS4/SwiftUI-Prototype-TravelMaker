@@ -18,6 +18,9 @@
 		9B79DB702B8435C5009A6BFD /* subway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B79DB6F2B8435C5009A6BFD /* subway.jpg */; };
 		9B79DB732B8436F7009A6BFD /* TravelModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79DB722B8436F7009A6BFD /* TravelModelStore.swift */; };
 		9B79DB752B8438C4009A6BFD /* yeomiji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B79DB742B8438C4009A6BFD /* yeomiji.jpg */; };
+		CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2642B843A7E005D3C32 /* MyTravelView.swift */; };
+		CB01F2672B843D40005D3C32 /* MyTravelSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */; };
+		CB01F2692B843E0D005D3C32 /* ButtonWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		9B79DB6F2B8435C5009A6BFD /* subway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = subway.jpg; sourceTree = "<group>"; };
 		9B79DB722B8436F7009A6BFD /* TravelModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModelStore.swift; sourceTree = "<group>"; };
 		9B79DB742B8438C4009A6BFD /* yeomiji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeomiji.jpg; sourceTree = "<group>"; };
+		CB01F2642B843A7E005D3C32 /* MyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelView.swift; sourceTree = "<group>"; };
+		CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelSubView.swift; sourceTree = "<group>"; };
+		CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWhite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 			children = (
 				9B47675C2B84253B0093969F /* ContentView.swift */,
 				9B47676F2B8431940093969F /* ButtonBackground.swift */,
+				CB01F2642B843A7E005D3C32 /* MyTravelView.swift */,
+				CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */,
+				CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,7 +196,10 @@
 				9B79DB732B8436F7009A6BFD /* TravelModelStore.swift in Sources */,
 				9B47676B2B8425D60093969F /* UserModel.swift in Sources */,
 				9B4767692B8425C80093969F /* TravelModel.swift in Sources */,
+				CB01F2692B843E0D005D3C32 /* ButtonWhite.swift in Sources */,
+				CB01F2672B843D40005D3C32 /* MyTravelSubView.swift in Sources */,
 				9B47675D2B84253B0093969F /* ContentView.swift in Sources */,
+				CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */,
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
 				9B79DB6E2B843537009A6BFD /* UserModelStore.swift in Sources */,
 				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
