@@ -12,9 +12,9 @@ class UserModelStore {
     
     init() {
         userStore = [
-            UserModel(name: "홍길동", profileImage: "subway", gender: "남성", location: "제주도", language: ["한국어", "영어"], isGuide: true),
-            UserModel(name: "이몽룡", profileImage: "subway", gender: "남성", location: "부산광역시", language: ["한국어", "영어", "일본어"], isGuide: true),
-            UserModel(name: "성춘향", profileImage: "subway", gender: "남성", location: "서울특별시", language: ["한국어", "중국어"], isGuide: true),
+            UserModel(name: "홍길동", profileImage: "subway", gender: "남성", age: 30, location: "제주도", language: "한국어, English", isGuide: true),
+            UserModel(name: "이몽룡", profileImage: "subway", gender: "남성", age: 30, location: "부산광역시", language: "한국어, English, 日本語", isGuide: true),
+            UserModel(name: "성춘향", profileImage: "subway", gender: "남성", age: 30, location: "서울특별시", language: "한국어, 中国人", isGuide: false),
         ]
     }
 }
