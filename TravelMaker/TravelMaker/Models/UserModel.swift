@@ -12,7 +12,8 @@ struct UserModel: Identifiable {
     let name: String
     let profileImage: String
     let gender: String
+    let age: Int
     let location: String
-    let language: [String]
+    let language: String
     let isGuide: Bool
 }
