@@ -17,7 +17,7 @@ struct ReservationSuccess: View {
                 .foregroundColor(Color.green)
             Text("예약이 완료되었습니다")
             VStack {
-                NavigationLink(destination: MyTravelView())) {
+                NavigationLink(destination: MyTravelView()) {
                     ButtonBackground(text: "예약내역확인하기")
                         .padding(.top, 50.0)
                         .frame(width: 300.0)
