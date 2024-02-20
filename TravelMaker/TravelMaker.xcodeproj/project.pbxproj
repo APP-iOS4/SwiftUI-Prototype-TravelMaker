@@ -21,6 +21,11 @@
 		9B79DB732B8436F7009A6BFD /* TravelModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79DB722B8436F7009A6BFD /* TravelModelStore.swift */; };
 		9B79DB752B8438C4009A6BFD /* yeomiji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B79DB742B8438C4009A6BFD /* yeomiji.jpg */; };
 
+		D792C75F2B84958100091E40 /* GuidePackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792C75E2B84958100091E40 /* GuidePackageView.swift */; };
+		D792C7612B8495B100091E40 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792C7602B8495B100091E40 /* CategoryView.swift */; };
+		D792C7632B8495CE00091E40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792C7622B8495CE00091E40 /* HomeView.swift */; };
+
+
 		CB01F26D2B8460FC005D3C32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F26C2B8460FC005D3C32 /* ProfileView.swift */; };
 		CB01F26F2B846FD0005D3C32 /* ProfileProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */; };
 
@@ -34,6 +39,7 @@
 		CB01F2672B843D40005D3C32 /* MyTravelSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */; };
 		CB01F2692B843E0D005D3C32 /* ButtonWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */; };
 		CB01F26B2B845CCA005D3C32 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F26A2B845CCA005D3C32 /* SearchBar.swift */; };
+
 
 /* End PBXBuildFile section */
 
@@ -53,6 +59,11 @@
 		9B79DB722B8436F7009A6BFD /* TravelModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModelStore.swift; sourceTree = "<group>"; };
 		9B79DB742B8438C4009A6BFD /* yeomiji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeomiji.jpg; sourceTree = "<group>"; };
 
+		D792C75E2B84958100091E40 /* GuidePackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePackageView.swift; sourceTree = "<group>"; };
+		D792C7602B8495B100091E40 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		D792C7622B8495CE00091E40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+
+
 		CB01F26C2B8460FC005D3C32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProductsView.swift; sourceTree = "<group>"; };
 
@@ -65,6 +76,7 @@
 		CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelSubView.swift; sourceTree = "<group>"; };
 		CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWhite.swift; sourceTree = "<group>"; };
 		CB01F26A2B845CCA005D3C32 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+
 
 
 /* End PBXFileReference section */
@@ -145,6 +157,11 @@
 				9B47675C2B84253B0093969F /* ContentView.swift */,
 				9B47676F2B8431940093969F /* ButtonBackground.swift */,
 
+				D792C75E2B84958100091E40 /* GuidePackageView.swift */,
+				D792C7602B8495B100091E40 /* CategoryView.swift */,
+				D792C7622B8495CE00091E40 /* HomeView.swift */,
+
+
 				04208FE32B844602006B1C38 /* DetailView.swift */,
 				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
 
@@ -159,6 +176,7 @@
 				CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */,
 				CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */,
 				CB01F26A2B845CCA005D3C32 /* SearchBar.swift */,
+
 
 
 
@@ -244,7 +262,11 @@
 				9B47676B2B8425D60093969F /* UserModel.swift in Sources */,
 				9B4767692B8425C80093969F /* TravelModel.swift in Sources */,
 
+				D792C7632B8495CE00091E40 /* HomeView.swift in Sources */,
+
+
 				9B79DB7D2B843A32009A6BFD /* MessageModelStore.swift in Sources */,
+
 				9B47675D2B84253B0093969F /* ContentView.swift in Sources */,
 				9B79DB792B84399A009A6BFD /* MessageView.swift in Sources */,
 
@@ -259,12 +281,18 @@
 				9B79DB7F2B844019009A6BFD /* MessageDetailView.swift in Sources */,
 				9B79DB6E2B843537009A6BFD /* UserModelStore.swift in Sources */,
 
+				D792C75F2B84958100091E40 /* GuidePackageView.swift in Sources */,
+				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
+				D792C7612B8495B100091E40 /* CategoryView.swift in Sources */,
+
+
 				9B79DB7B2B8439D9009A6BFD /* MessageModel.swift in Sources */,
 
 				CB01F26B2B845CCA005D3C32 /* SearchBar.swift in Sources */,
 
 				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
 				CB01F26F2B846FD0005D3C32 /* ProfileProductsView.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
