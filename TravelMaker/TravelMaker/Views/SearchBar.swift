@@ -15,6 +15,7 @@ struct SearchBar: View {
     var body: some View {
         //MARK: - Search Bar
         HStack {
+            
             TextField("여행하고 싶은 장소를 입력해주세요.", text: $searchText)
                 .padding(15)
                 .padding(.horizontal, 25)
@@ -30,6 +31,7 @@ struct SearchBar: View {
                         if isEditing {
                             Button(action: {
                                 self.searchText = ""
+                                isEditing = false
                             }, label: {
                                 Image(systemName: "multiply.circle.fill")
                                     .foregroundStyle(.tmGray)
@@ -51,7 +53,9 @@ struct SearchBar: View {
         .padding(.trailing, 5)
         .padding(.top, 10)
         .padding(.leading, 5)
+        
     }
+    
 }
 
 #Preview {
