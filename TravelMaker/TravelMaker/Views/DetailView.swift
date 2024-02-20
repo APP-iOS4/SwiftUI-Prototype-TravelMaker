@@ -43,7 +43,7 @@ struct DetailView: View {
                                 .font(.title2)
                                 .padding(.top, 20.0)
                             
-                            Text("사용가능한 언어:   " + travel.author.language.map{$0}.joined(separator: ","))
+                            Text("사용가능한 언어:   " + travel.author.language)
                         }
                         Spacer()
                         Image(travel.author.profileImage)
