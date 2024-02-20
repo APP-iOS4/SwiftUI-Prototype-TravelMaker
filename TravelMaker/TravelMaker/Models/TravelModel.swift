@@ -10,7 +10,7 @@ import Foundation
 struct TravelModel: Identifiable{
     let id: UUID = UUID()
     let title: String
-    let imageName: [String]
+    let imageName: String
     let author: UserModel
     var guideProfileImage: String
     let price: Int?
