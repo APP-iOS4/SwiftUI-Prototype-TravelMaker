@@ -13,6 +13,7 @@
 		9B4767622B84253C0093969F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4767612B84253C0093969F /* Preview Assets.xcassets */; };
 		9B4767692B8425C80093969F /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4767682B8425C80093969F /* TravelModel.swift */; };
 		9B47676B2B8425D60093969F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47676A2B8425D60093969F /* UserModel.swift */; };
+		9B4767702B8431940093969F /* ButtonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47676F2B8431940093969F /* ButtonBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9B4767612B84253C0093969F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B4767682B8425C80093969F /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 		9B47676A2B8425D60093969F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9B47676F2B8431940093969F /* ButtonBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				9B47675A2B84253B0093969F /* TravelMakerApp.swift */,
 				9B47675C2B84253B0093969F /* ContentView.swift */,
+				9B47676F2B8431940093969F /* ButtonBackground.swift */,
 				9B47676E2B8426510093969F /* Models */,
 				9B47675E2B84253C0093969F /* Assets.xcassets */,
 				9B4767602B84253C0093969F /* Preview Content */,
@@ -155,6 +158,7 @@
 				9B4767692B8425C80093969F /* TravelModel.swift in Sources */,
 				9B47675D2B84253B0093969F /* ContentView.swift in Sources */,
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
+				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
