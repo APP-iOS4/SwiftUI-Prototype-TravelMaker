@@ -22,6 +22,7 @@ struct MyTravelSubView: View {
                     .padding(.trailing, 20)
                 VStack {
                     Text("\(name)")
+                        //.lineLimit(1)
                         .foregroundStyle(.tmBlack)
                         .padding(.bottom, 10)
                     HStack {

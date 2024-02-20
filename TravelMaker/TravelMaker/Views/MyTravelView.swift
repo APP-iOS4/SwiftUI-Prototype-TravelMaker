@@ -10,7 +10,7 @@ import SwiftUI
 struct MyTravelView: View {
     var body: some View {
         NavigationStack {
-            VStack {
+            ScrollView {
                 MyTravelSubView(name: "전유진 가이드님의 아름다운 장가계", price: 200000, image: "subway")
                 Divider()
                     .background(.tmYellow1)
@@ -18,10 +18,13 @@ struct MyTravelView: View {
                 Divider()
                     .background(.tmYellow1)
                 
-                Spacer()
-                Text("예약 내역에 문제가 있나요?")
-                Text("고객센터 도움받기")
-                    .underline()
+                VStack {
+                    Text("예약 내역에 문제가 있나요?")
+                    Text("고객센터 도움받기")
+                        .underline()
+                }
+                .padding(.top, 50)
+                
             }
             .padding()
             .navigationTitle("가이드 예약 내역")
