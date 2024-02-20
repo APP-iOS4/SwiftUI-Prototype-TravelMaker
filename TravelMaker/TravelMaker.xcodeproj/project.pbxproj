@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04208FE42B844602006B1C38 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04208FE32B844602006B1C38 /* DetailView.swift */; };
+		04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04208FE52B84895F006B1C38 /* ReservationSuccess.swift */; };
 		9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675A2B84253B0093969F /* TravelMakerApp.swift */; };
 		9B47675D2B84253B0093969F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675C2B84253B0093969F /* ContentView.swift */; };
 		9B47675F2B84253C0093969F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B47675E2B84253C0093969F /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04208FE32B844602006B1C38 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04208FE52B84895F006B1C38 /* ReservationSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationSuccess.swift; sourceTree = "<group>"; };
 		9B4767572B84253B0093969F /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B47675A2B84253B0093969F /* TravelMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMakerApp.swift; sourceTree = "<group>"; };
 		9B47675C2B84253B0093969F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			children = (
 				9B47675C2B84253B0093969F /* ContentView.swift */,
 				9B47676F2B8431940093969F /* ButtonBackground.swift */,
+				04208FE32B844602006B1C38 /* DetailView.swift */,
+				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,10 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B79DB732B8436F7009A6BFD /* TravelModelStore.swift in Sources */,
+				04208FE42B844602006B1C38 /* DetailView.swift in Sources */,
 				9B47676B2B8425D60093969F /* UserModel.swift in Sources */,
 				9B4767692B8425C80093969F /* TravelModel.swift in Sources */,
 				9B47675D2B84253B0093969F /* ContentView.swift in Sources */,
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
+				04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */,
 				9B79DB6E2B843537009A6BFD /* UserModelStore.swift in Sources */,
 				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
 			);
