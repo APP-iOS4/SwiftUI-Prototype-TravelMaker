@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04208FE42B844602006B1C38 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04208FE32B844602006B1C38 /* DetailView.swift */; };
+		04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04208FE52B84895F006B1C38 /* ReservationSuccess.swift */; };
 		9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675A2B84253B0093969F /* TravelMakerApp.swift */; };
 		9B47675D2B84253B0093969F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675C2B84253B0093969F /* ContentView.swift */; };
 		9B47675F2B84253C0093969F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B47675E2B84253C0093969F /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04208FE32B844602006B1C38 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04208FE52B84895F006B1C38 /* ReservationSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationSuccess.swift; sourceTree = "<group>"; };
 		9B4767572B84253B0093969F /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B47675A2B84253B0093969F /* TravelMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMakerApp.swift; sourceTree = "<group>"; };
 		9B47675C2B84253B0093969F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +145,10 @@
 				9B47675C2B84253B0093969F /* ContentView.swift */,
 				9B47676F2B8431940093969F /* ButtonBackground.swift */,
 
+				04208FE32B844602006B1C38 /* DetailView.swift */,
+				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
+
+
 				CB01F26C2B8460FC005D3C32 /* ProfileView.swift */,
 				CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */,
 
@@ -151,6 +159,7 @@
 				CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */,
 				CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */,
 				CB01F26A2B845CCA005D3C32 /* SearchBar.swift */,
+
 
 
 			);
@@ -231,6 +240,7 @@
 			files = (
 				CB01F26D2B8460FC005D3C32 /* ProfileView.swift in Sources */,
 				9B79DB732B8436F7009A6BFD /* TravelModelStore.swift in Sources */,
+				04208FE42B844602006B1C38 /* DetailView.swift in Sources */,
 				9B47676B2B8425D60093969F /* UserModel.swift in Sources */,
 				9B4767692B8425C80093969F /* TravelModel.swift in Sources */,
 
@@ -244,6 +254,8 @@
 				CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */,
 
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
+
+				04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */,
 				9B79DB7F2B844019009A6BFD /* MessageDetailView.swift in Sources */,
 				9B79DB6E2B843537009A6BFD /* UserModelStore.swift in Sources */,
 
