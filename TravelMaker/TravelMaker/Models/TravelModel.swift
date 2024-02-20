@@ -12,13 +12,14 @@ struct TravelModel: Identifiable{
     let title: String
     let imageName: [String]
     let author: UserModel
+    var guideProfileImage: String
     let price: Int?
     let location: String
     let description: String
     let tag: Tag
 }
 
-enum Tag {
+enum Tag: CaseIterable {
     case food
     case art
     case leasure
