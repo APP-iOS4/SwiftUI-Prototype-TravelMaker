@@ -86,11 +86,17 @@ struct MessageDetailView: View {
                     
                     write = ""
                 } label: {
-                    ButtonBackground(text: "전송")
+                    ZStack{
+                        RoundedRectangle(cornerSize: CGSize(width: 5, height: 5))
+                            .foregroundStyle(.tmYellow1)
+                        Text("전송")
+                            .foregroundStyle(.tmBlack)
+                    }
+                    .frame(height: 40)
                 }
-                .frame(width: 70, height: 50)
+                .frame(width: 70, height: 40)
             }
-            .frame(height: 50)
+            .frame(height: 40)
             .padding(EdgeInsets(top: 5, leading: 10, bottom: 10, trailing: 10))
         }
         .navigationTitle("\(messageModel.user.name)님의 메시지")
