@@ -22,7 +22,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Message", systemImage: "text.bubble")
                 }
-            ProfileView()
+            UserProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }

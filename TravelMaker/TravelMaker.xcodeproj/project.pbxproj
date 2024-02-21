@@ -38,6 +38,7 @@
 		9B79DB7B2B8439D9009A6BFD /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79DB7A2B8439D9009A6BFD /* MessageModel.swift */; };
 		9B79DB7D2B843A32009A6BFD /* MessageModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79DB7C2B843A32009A6BFD /* MessageModelStore.swift */; };
 		9B79DB7F2B844019009A6BFD /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79DB7E2B844019009A6BFD /* MessageDetailView.swift */; };
+		9BF0637E2B85CA750026BE3A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0637D2B85CA750026BE3A /* UserProfileView.swift */; };
 		CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2642B843A7E005D3C32 /* MyTravelView.swift */; };
 		CB01F2672B843D40005D3C32 /* MyTravelSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */; };
 		CB01F2692B843E0D005D3C32 /* ButtonWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */; };
@@ -83,6 +84,7 @@
 		9B79DB7A2B8439D9009A6BFD /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		9B79DB7C2B843A32009A6BFD /* MessageModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelStore.swift; sourceTree = "<group>"; };
 		9B79DB7E2B844019009A6BFD /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
+		9BF0637D2B85CA750026BE3A /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		CB01F2642B843A7E005D3C32 /* MyTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelView.swift; sourceTree = "<group>"; };
 		CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelSubView.swift; sourceTree = "<group>"; };
 		CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWhite.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				04208FE32B844602006B1C38 /* DetailView.swift */,
 				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
 				CB01F26C2B8460FC005D3C32 /* ProfileView.swift */,
+				9BF0637D2B85CA750026BE3A /* UserProfileView.swift */,
 				CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */,
 				9B79DB782B84399A009A6BFD /* MessageView.swift */,
 				9B79DB7E2B844019009A6BFD /* MessageDetailView.swift */,
@@ -304,6 +307,7 @@
 				CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */,
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
 				04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */,
+				9BF0637E2B85CA750026BE3A /* UserProfileView.swift in Sources */,
 				9B79DB7F2B844019009A6BFD /* MessageDetailView.swift in Sources */,
 				9B79DB6E2B843537009A6BFD /* UserModelStore.swift in Sources */,
 				D792C75F2B84958100091E40 /* GuidePackageView.swift in Sources */,
