@@ -17,7 +17,7 @@ struct HomeView: View {
                         .font(.largeTitle)
                         .foregroundStyle(Color.tmBlue2)
                     SearchBar() // 검색
-                        .padding(.bottom, 5.0)
+                        .padding(.bottom, 3)
                 }
                 .padding(.horizontal)
                 Divider()

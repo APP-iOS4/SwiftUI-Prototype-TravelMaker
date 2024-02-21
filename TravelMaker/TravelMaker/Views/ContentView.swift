@@ -27,6 +27,7 @@ struct ContentView: View {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
         }
+        .accentColor(.tmBlue2)
     }
 }
 

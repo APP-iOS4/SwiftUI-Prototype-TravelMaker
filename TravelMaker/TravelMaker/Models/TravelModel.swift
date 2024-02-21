@@ -20,6 +20,7 @@ struct TravelModel: Identifiable{
 }
 
 enum Tag: CaseIterable {
+    case all
     case food
     case art
     case leasure
