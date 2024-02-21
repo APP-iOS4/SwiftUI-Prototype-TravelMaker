@@ -26,7 +26,20 @@ Xcode로 만드는 앱 프로젝트를 위한 GitHub 저장소 템플릿
  2. TravelMaker 디렉토리의 TravelMaker.xcodeproj를 실행
  3. 실행 기기를 iPhone 15 Pro로 변경 후 라이트 모드로 실행
 
+## 실행화면
+<img alt="메인화면" src="https://github.com/APP-iOS4/SwiftUI-Prototype-TravelMaker/assets/145957641/8d368d1f-9eb3-473e-9c55-e239340ccddb" width=150px>
+<img alt="상세화면" src="https://github.com/APP-iOS4/SwiftUI-Prototype-TravelMaker/assets/145957641/84619e42-0b07-4953-bd80-cb8da875a85a" width=150px>
+<img alt="메세지화면" src="https://github.com/APP-iOS4/SwiftUI-Prototype-TravelMaker/assets/145957641/46057dd7-a4da-4dcd-b562-ba04eaa4dea2" width=150px>
+<img alt="프로필화면" src="https://github.com/APP-iOS4/SwiftUI-Prototype-TravelMaker/assets/145957641/d764ffcb-7627-4f8f-b213-8a615c3e95aa" width=150px>
+
+
+
+## 사용자 프로세스 Flow
+![Section 1](https://github.com/APP-iOS4/SwiftUI-Prototype-TravelMaker/assets/145957641/82df1cd0-469c-46cf-9a56-909dd3c8e901)
+
+
 ## 사용자 시나리오
+
 1. 메인 페이지에서 가이드가 올려둔 게시물을 확인할 수 있음 
 2. 검색창을 누르고 지역을 검색하면 해당 지역에 관련된 게시물을 확인할 수 있음 (검색기능 미구현)
 3. 카테고리를 선택할 수 있음
