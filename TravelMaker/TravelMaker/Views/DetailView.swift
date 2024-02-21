@@ -10,6 +10,7 @@ import SwiftUI
 struct DetailView: View {
     let userStore = UserModelStore().userStore
     let travel = TravelModelStore().travelStore.first!
+
     @State var selectedDate: Date = Date()
     @State var adultNumber: Int = 0
     @State var childNumber: Int = 0
@@ -241,13 +242,6 @@ struct DetailView: View {
                                         .frame(maxWidth: 30.0, maxHeight: 30.0, alignment: .center)
                                         .padding(.trailing, 10.0)
                                         .foregroundStyle(buttonChecked ? Color.green : Color(UIColor.systemGray5))
-                                    //                                if buttonChecked {
-                                    //                                    Image(systemName: "checkmark.circle")
-                                    //                                        .resizable()
-                                    //                                        .frame(maxWidth: 30.0, maxHeight: 30.0, alignment: .center)
-                                    //                                        .padding(.trailing, 10.0)
-                                    //                                        .foregroundStyle(Color.green)
-                                    //                                }
                                 }
                             }
                             HStack{
@@ -263,16 +257,14 @@ struct DetailView: View {
                             
                         }
                         if buttonChecked{
-                            Button {
+                            NavigationLink{
                                 if buttonChecked {
-                                    self.isPresented.toggle()
+                                    ReservationSuccess()
                                 }
                             } label: {
-                                ButtonBackground(text: "예약하기")
+                                ButtonWhite(text: "예약하기")
                             }
-                            .sheet(isPresented: $isPresented) {
-                                ReservationSuccess()
-                            }
+                            
                         }
                         
                     }
