@@ -280,7 +280,8 @@ struct DetailView: View {
                     Divider()
                     Section{
                         
-                        
+                        Rectangle()
+                            .frame(width: 0, height: 50)
                     }
                     
                 }
