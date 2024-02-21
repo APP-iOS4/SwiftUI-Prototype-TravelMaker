@@ -27,30 +27,35 @@ struct ResevationDetailView: View {
                             Text(travel.title)
                                 .foregroundStyle(Color.tmBlack)
                                 .font(.title2)
+                                .fontWeight(.bold)
                             Text("\(travel.author.name) 메이커와의 여행")
                             
                         }
                     }
                     
                 }
+                .padding()
                 VStack(alignment: .leading){
                     
-                    Text("예약 총 금액 200,000원")
+                    Text("결제 금액 : 200,000원")
                         .font(.title2)
                         .multilineTextAlignment(.leading)
                         .bold()
+                        .padding(.bottom, 5)
                     Text("예약번호 :  29138317572")
                     Text("예약날짜 :  2024 - 03 - 01")
+                        .padding(.bottom, 5)
                     Divider()
                     Section{
                         Text("취소 및 환불 규정")
                             .font(.title2)
                             .bold()
-                            .padding(.bottom, 5.0)
+                            .padding(.vertical, 10.0)
                         Text("취소규정")
                             .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
                             .background(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)).foregroundStyle(.tmYellow2))
                         Text("현재시점 기준, 예상취소 수수료 12,253원입니다.")
+                            .padding(.bottom, 5)
                         Text("환불규정")
                             .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
                             .background(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)).foregroundStyle(.tmBlue2))
@@ -61,6 +66,7 @@ struct ResevationDetailView: View {
                         
                     }
                 }
+                .padding()
                 .navigationTitle("예약 확정 내역")
 
             }
