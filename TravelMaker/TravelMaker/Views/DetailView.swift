@@ -122,7 +122,7 @@ struct DetailView: View {
                                     } label: {
                                         Image(systemName: "minus.circle")
                                             .resizable()
-                                            .frame(width: 30.0, height: 30.0)
+                                            .frame(width: 25, height: 25)
                                     }
                                     Spacer()
                                     Text("\(adultNumber)")
@@ -135,7 +135,7 @@ struct DetailView: View {
                                     } label: {
                                         Image(systemName: "plus.circle")
                                             .resizable()
-                                            .frame(width: 30.0, height: 30.0)
+                                            .frame(width: 25, height: 25)
                                         
                                     }
                                 }
@@ -156,7 +156,7 @@ struct DetailView: View {
                                     } label: {
                                         Image(systemName: "minus.circle")
                                             .resizable()
-                                            .frame(width: 30.0, height: 30.0)
+                                            .frame(width: 25, height: 25)
                                     }
                                     Spacer()
                                     Text("\(childNumber)")
@@ -169,7 +169,7 @@ struct DetailView: View {
                                     } label: {
                                         Image(systemName: "plus.circle")
                                             .resizable()
-                                            .frame(width: 30.0, height: 30.0)
+                                            .frame(width: 25, height: 25)
                                         
                                     }
                                 }
@@ -191,7 +191,7 @@ struct DetailView: View {
                                     } label: {
                                         Image(systemName: "minus.circle")
                                             .resizable()
-                                            .frame(width: 30.0, height: 30.0)
+                                            .frame(width: 25, height: 25)
                                     }
                                     Spacer()
                                     Text("\(babyNumber)")
@@ -204,7 +204,7 @@ struct DetailView: View {
                                     } label: {
                                         Image(systemName: "plus.circle")
                                             .resizable()
-                                            .frame(width: 30.0, height: 30.0)
+                                            .frame(width: 25, height: 25)
                                         
                                     }
                                 }
@@ -287,7 +287,9 @@ struct DetailView: View {
                 .padding(20.0)
                 
             }
+            .ignoresSafeArea()
         }
+        
     }
 }
 

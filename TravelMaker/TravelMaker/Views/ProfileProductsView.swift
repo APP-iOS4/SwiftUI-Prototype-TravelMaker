@@ -21,18 +21,13 @@ struct ProfileProductsView: View {
                     Text("자연을 즐기는 장가계")
                         .foregroundStyle(.tmBlack)
                         .fontWeight(.bold)
-                        .font(.system(size: 20))
-//                    Button(action: {
-//                        
-//                    }, label: {
-//                       ButtonBackground(text: "가이드 상품 추가하기")
-//                    })
-//                    .padding(.top, 50)
+                        .font(.system(size: 23))
+                    
                     Spacer()
                     
                 }
                 .padding()
-                .navigationTitle("게시한 가이드 상품 & 일정")
+                .navigationTitle("게시한 상품 & 일정")
             })
         }
             
