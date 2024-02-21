@@ -38,7 +38,7 @@ struct DetailView: View {
                 //프로필 섹션
                 Section{
                     HStack{
-                        VStack{
+                        VStack (alignment: .leading){
                             Text(travel.author.name + " 님의 여행 가이드")
                                 .font(.title2)
                                 .padding(.top, 20.0)
@@ -46,11 +46,14 @@ struct DetailView: View {
                             Text("사용가능한 언어:   " + travel.author.language)
                         }
                         Spacer()
-                        Image(travel.author.profileImage)
-                            .resizable()
-                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                            .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
-                            .padding(.top, 20.0)
+                        NavigationLink(destination: ProfileView(), label: {
+                            Image(travel.author.profileImage)
+                                .resizable()
+                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
+                                .padding(.top, 20.0)
+                        })
+                        
                     }
                 }
                 
