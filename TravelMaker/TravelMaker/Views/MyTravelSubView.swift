@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct MyTravelSubView: View {
-    var name: String = "왕링링 가이드님의 아름다운 휴양지"
+    var name: String = "왕링링 메이커님의 아름다운 휴양지"
     var price: Int = 130000
     var image: String = "subway"
+    var state: String = "결제완료"
     var body: some View {
         VStack {
             HStack {
@@ -30,7 +31,7 @@ struct MyTravelSubView: View {
                             .foregroundStyle(.tmBlack)
                             .fontWeight(.bold)
                         Spacer()
-                        Text("결제완료")
+                        Text("\(state)")
                             .foregroundStyle(.tmBlack)
                             .fontWeight(.bold)
                     }
@@ -38,14 +39,19 @@ struct MyTravelSubView: View {
             }
             HStack {
                 Button(action: {
-                    //DetailView
+                    //영수증 느낌
                 }, label: {
                     ButtonWhite(text: "예약내역 상세")
                 })
                 Button(action: {
                     // 뷰를 만들어야 하나
                 }, label: {
-                    ButtonBackground(text: "리뷰 남기기")
+                    if state == "여행완료" {
+                        ButtonBackground(text: "리뷰 남기기")
+                    } else {
+                        
+                    }
+                    
                 })
                 
                

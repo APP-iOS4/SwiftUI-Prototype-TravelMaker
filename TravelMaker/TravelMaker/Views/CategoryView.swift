@@ -43,7 +43,6 @@ struct CategoryView: View {
                             }
                         }
                     }
-                    Spacer()
                     
                 }
                 GuidePackageView(tagIndex: tagIndex)

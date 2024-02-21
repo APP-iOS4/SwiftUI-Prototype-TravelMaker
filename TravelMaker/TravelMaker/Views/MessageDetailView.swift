@@ -28,11 +28,14 @@ struct MessageDetailView: View {
                             }
                             .frame(width: 250)
                             HStack{
-                                Image(messageModel.user.profileImage)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .clipShape(Circle())
-                                    .frame(height: 30)
+                                NavigationLink(destination: ProfileView(), label: {
+                                    Image(messageModel.user.profileImage)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .clipShape(Circle())
+                                        .frame(height: 30)
+                                })
+                                
                                 
                                 Text(message.date)
                                     .font(.subheadline)

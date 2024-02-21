@@ -12,10 +12,10 @@ struct MyTravelView: View {
         NavigationStack {
             ScrollView {
                 VStack{
-                    MyTravelSubView(name: "전유진 가이드님의 아름다운 장가계", price: 200000, image: "subway")
+                    MyTravelSubView(name: "전유진 가이드님의 아름다운 장가계", price: 200000, image: "subway", state: "결제완료")
                     Divider()
                         .background(.tmYellow1)
-                    MyTravelSubView(name: "김기표 가이드님의 아름다운 서울맛집투어", price: 20000, image: "subway")
+                    MyTravelSubView(name: "김기표 가이드님의 아름다운 서울맛집투어", price: 20000, image: "subway", state: "여행완료")
                     Divider()
                         .background(.tmYellow1)
                     

@@ -23,11 +23,6 @@ struct HomeView: View {
                 Divider()
                 ScrollView{
                     VStack(alignment: .leading){
-                        Text("게스트들이 선호하는 가이드 상품")
-                            .font(.title2)
-                            .fontWeight(.heavy)
-                            .padding(.leading , 20.0)
-                            .padding(.top, 10.0)
                         CategoryView()
                     }
                     

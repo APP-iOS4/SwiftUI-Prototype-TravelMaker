@@ -16,7 +16,10 @@ struct GuidePackageView: View {
     var body: some View {
                 
                 VStack(alignment: .leading) {
-                    
+                    Text("게스트들이 선호하는 가이드 상품")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        //.padding()
                     ForEach(filteredData(index: tagIndex)) {travel in
                         NavigationLink {
                             DetailView()
@@ -33,23 +36,26 @@ struct GuidePackageView: View {
                                     HStack {
                                         Image(travel.guideProfileImage) // 가이드 프로필 이미지
                                             .resizable()
-                                            .frame(width: 50, height: 50)
+                                            .frame(width: 70, height: 70)
                                             .clipShape(Circle())
-                                            .overlay {
-                                                Circle().stroke(.gray, lineWidth: 0.2)
-                                            }
                                             .shadow(radius: 5)
                                             .padding(.bottom, 10.0)
-                                        
                                         VStack (alignment: .leading) {
                                             Text("\(travel.author.name) 가이드님의 아름다운 휴양지") // 가이드 이름
                                                 .font(.headline)
-                                                .padding(.leading, 10.0)
-                                            Text("￦ \(travel.price ?? 0)") // 가격
-                                                .fontWeight(.bold)
+                                                .padding(.bottom, 1)
+                                            HStack {
+                                                //Spacer()
+                                                Text("￦\(travel.price ?? 0)") // 가격
+                                                    .fontWeight(.bold)
+                                                    .font(.system(size: 25))
+                                                
+                                            }
+                                            
                                         }
-                                        Spacer()
+              
                                     }
+                                    .padding(.bottom, 10)
                                 }
                                 
                                 Section{
@@ -57,30 +63,34 @@ struct GuidePackageView: View {
                                         .font(.title2)
                                         .fontWeight(.bold)
                                     
-                                    VStack(alignment: .leading, spacing: 25) {
+                                    VStack(alignment: .leading) {
                                         Text("위치: \(travel.location)") // 위치
                                             .font(.subheadline)
+                                        Text("2박3일") // 위치
+                                            .font(.subheadline)
                                         
-                                        Text(travel.description) // 설명
-                                            .font(.body)
-                                            .lineLimit(2)
                                     }
                                     
                                 }
                                 
-                                Divider()
+                               // Divider()
                             }
                         }
                 
                     }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 2)
+                    .foregroundColor(Color.tmBlack)
+                    .padding(.vertical, 10)
+                    .padding(.horizontal, 5)
                     
                 }
+                //.padding(.vertical, 100)
+                .padding(.horizontal, 5)
             
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 2)
-        .foregroundColor(Color.tmBlack)
+        
     }
     
     
