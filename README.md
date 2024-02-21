@@ -1,5 +1,8 @@
-# ProjectTemplete
-Xcode로 만드는 앱 프로젝트를 위한 GitHub 저장소 템플릿
+# TravelMaker
+## 프로젝트 소개
+멋쟁이 사자처럼 앱스쿨:iOS 4기
+
+7회차 실습조 LAB2 TravelMaker 프로토타입 개발
 
 ## 2조 조원이름
 - 김기표 [@rlvy0513](https://github.com/rlvy0513)
