@@ -31,11 +31,11 @@ struct CategoryView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 30, height: 30)
-                                .foregroundColor(isTagSelected[index] ? .tmBlack : .tmGray)
+                                .foregroundColor(isTagSelected[index] ? .tmBlue1 : .tmGray)
                             
                             // 테마 이름
                             Text(tagNames[index])
-                                .foregroundColor(isTagSelected[index] ? .tmBlack : .tmGray)
+                                .foregroundColor(isTagSelected[index] ? .tmBlue1 : .tmGray)
                                 .padding(10)
                                 .cornerRadius(10)
                                 .fontWeight(.bold)
