@@ -44,24 +44,44 @@ struct DetailView: View {
                                         .font(.title2)
                                         .padding(.top, 20.0)
                                     
-                                    Text("사용가능한 언어:   " + travel.author.language)
+                                    Text("사용가능한 언어: " + travel.author.language)
+                                    HStack{
+                                        Image(systemName: "star.fill")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(height: 20)
+                                            .foregroundStyle(.yellow)
+                                        Text("5.0")
+                                        
+                                        Text("현지 거주 10년차")
+                                            .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
+                                            .background(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)).foregroundStyle(.tmYellow2))
+                                        
+                                    }
                                 }
                                 Spacer()
-                                NavigationLink(destination: ProfileView(), label: {
-                                    Image(travel.author.profileImage)
-                                        .resizable()
-                                        .clipShape(Circle())
-                                        .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
-                                        .padding(.top, 20.0)
-                                })
+                                
+                                Image(travel.author.profileImage)
+                                    .resizable()
+                                    .clipShape(Circle())
+                                    .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
+                                    .padding(.top, 20.0)
                                 
                             }
                             
-                            NavigationLink{
-                                MessageDetailView(messageModel: MessageModelStore().messages.first!)
-                            } label: {
-                                ButtonBackground(text: "1:1 채팅")
+                            HStack{
+                                NavigationLink{
+                                    ProfileView()
+                                } label: {
+                                    ButtonWhite(text: "가이드 프로필")
+                                }
+                                NavigationLink{
+                                    MessageDetailView(messageModel: MessageModelStore().messages.first!)
+                                } label: {
+                                    ButtonBackground(text: "1:1 채팅")
+                                }
                             }
+                            
                         }
                     }
                     
