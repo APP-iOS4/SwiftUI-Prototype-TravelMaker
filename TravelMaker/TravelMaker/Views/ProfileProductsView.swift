@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ProfileProductsView: View {
+    var travel: TravelModel = TravelModelStore().travelStore.first!
     var body: some View {
         
         NavigationStack {
-            NavigationLink(destination: DetailView(), label: {
+            NavigationLink(destination: DetailView(travel: travel), label: {
                 VStack(alignment: .leading) {
                     Image("yeomiji")
                         .resizable()

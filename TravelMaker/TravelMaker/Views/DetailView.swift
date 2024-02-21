@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     let userStore = UserModelStore().userStore
-    let travel = TravelModelStore().travelStore.first!
+    var travel:  TravelModel
 
     @State var selectedDate: Date = Date()
     @State var adultNumber: Int = 0
@@ -22,7 +22,7 @@ struct DetailView: View {
         NavigationStack{
             ScrollView{
                 //이미지 부분
-                Image("yeomiji")
+                Image(travel.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(maxWidth: .infinity)
@@ -284,8 +284,4 @@ struct DetailView: View {
         }
         
     }
-}
-
-#Preview {
-    DetailView()
 }

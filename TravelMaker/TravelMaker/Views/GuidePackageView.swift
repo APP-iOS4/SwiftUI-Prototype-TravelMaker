@@ -22,7 +22,7 @@ struct GuidePackageView: View {
                         //.padding()
                     ForEach(filteredData(index: tagIndex)) {travel in
                         NavigationLink {
-                            DetailView()
+                            DetailView(travel: travel)
                         } label: {
                             VStack (alignment: .leading){
                                 Image(travel.imageName) // 여행지 사진

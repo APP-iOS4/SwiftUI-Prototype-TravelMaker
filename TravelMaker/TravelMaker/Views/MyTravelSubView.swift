@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MyTravelSubView: View {
+    let travel: TravelModel = TravelModelStore().travelStore.first!
     var name: String = "왕링링 메이커님의 아름다운 휴양지"
     var price: Int = 130000
     var image: String = "subway"
@@ -40,7 +41,7 @@ struct MyTravelSubView: View {
                 }
                 HStack {
                         NavigationLink {
-                            ResevationDetailView()
+                            ResevationDetailView(travel: travel)
                         } label: {
                             ButtonWhite(text: "예약내역 상세")
                         }
