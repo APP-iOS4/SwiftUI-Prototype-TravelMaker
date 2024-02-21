@@ -21,7 +21,7 @@ struct MessageDetailView: View {
                         VStack(alignment: .leading){
                             ZStack(alignment: .leading){
                                 RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                    .foregroundStyle(.tmBlue1)
+                                    .foregroundStyle(.tmBlue2)
                                 Text("\(message.message)")
                                     .foregroundStyle(.tmBlack)
                                     .padding(10)
@@ -91,7 +91,7 @@ struct MessageDetailView: View {
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerSize: CGSize(width: 5, height: 5))
-                            .foregroundStyle(.tmYellow1)
+                            .foregroundStyle(.tmYellow2)
                         Text("전송")
                             .foregroundStyle(.tmBlack)
                     }
@@ -106,3 +106,4 @@ struct MessageDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
+
