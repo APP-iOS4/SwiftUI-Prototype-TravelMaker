@@ -13,10 +13,15 @@ struct MessageView: View {
     var body: some View {
         NavigationStack{
             List{
+                
                 ForEach(messageStore.messages){ message in
-                    NavigationLink{
-                        MessageDetailView(messageModel: message)
-                    } label: {
+                    ZStack {
+                        NavigationLink{
+                            MessageDetailView(messageModel: message)
+                        } label: {
+                            EmptyView()
+                        }
+                        .opacity(0.0)
                         HStack{
                             Image(message.user.profileImage)
                                 .resizable()
@@ -33,8 +38,11 @@ struct MessageView: View {
                                     .font(.subheadline)
                                     .foregroundStyle(.tmGray)
                             }
+                            
+                            Image(systemName: "1.circle.fill")
+                                .foregroundColor(.tmYellow2)
+                                .font(.system(size: 23))
                         }
-                        
                     }
                 }
             }
