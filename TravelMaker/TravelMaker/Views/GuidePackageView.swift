@@ -14,11 +14,15 @@ struct GuidePackageView: View {
     var travels: [TravelModel] = TravelModelStore().travelStore
     
     var body: some View {
-        ScrollView{
-            
+//        NavigationStack {
+            ScrollView{
+                
                 VStack(alignment: .leading) {
+                    
                     ForEach(filteredData(index: tagIndex)) {travel in
-
+                        NavigationLink {
+                            DetailView()
+                        } label: {
                             VStack (alignment: .leading){
                                 Image(travel.imageName) // 여행지 사진
                                     .resizable()
@@ -38,7 +42,7 @@ struct GuidePackageView: View {
                                             }
                                             .shadow(radius: 5)
                                             .padding(.bottom, 10.0)
-
+                                        
                                         VStack (alignment: .leading) {
                                             Text("\(travel.author.name) 가이드님의 아름다운 휴양지") // 가이드 이름
                                                 .font(.headline)
@@ -65,27 +69,31 @@ struct GuidePackageView: View {
                                     }
                                     
                                 }
+                                
+                                Divider()
                             }
-                            Divider()
-                            
                         }
+                
                     }
+                    
                 }
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(radius: 2)
-                .foregroundColor(Color.tmBlack)
             }
-        
+//        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 2)
+        .foregroundColor(Color.tmBlack)
+    }
+    
     
     func filteredData(index: Int) -> [TravelModel] {
-            if index > 0 {
-                return travels.filter { $0.tag == Tag.allCases[index] }
-            } else {
-                return travels
-            }
+        if index > 0 {
+            return travels.filter { $0.tag == Tag.allCases[index] }
+        } else {
+            return travels
         }
+    }
 }
 
 #Preview {
