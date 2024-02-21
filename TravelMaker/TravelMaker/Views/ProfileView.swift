@@ -60,36 +60,38 @@ struct ProfileView: View {
                     }
                     
                     Divider()
-                        .background(.tmYellow2)
+                        .background(.tmGray)
                     Text("성별: \(user.gender)")
                         .foregroundStyle(.tmBlack)
                         .font(.system(size: 20))
                         .padding(8)
                     Divider()
+                        .background(.tmGray)
                     Text("나이: \(user.age)")
                         .foregroundStyle(.tmBlack)
                         .font(.system(size: 20))
                         .padding(8)
                     Divider()
-                        .background(.tmYellow2)
+                        .background(.tmGray)
                     Text("사용언어 : \(user.language)")
                         .foregroundStyle(.tmBlack)
                         .font(.system(size: 20))
                         .padding(8)
                     Divider()
-                        .background(.tmYellow2)
+                        .background(.tmGray)
                     NavigationLink(destination: ProfileProductsView(), label: {
                         HStack {
                             Text("게시한 상품 & 일정")
                                 .font(.system(size: 20))
                             Spacer()
                             Image(systemName: "greaterthan")
+                                .foregroundStyle(.tmGray)
                         }
                         .foregroundStyle(.tmBlack)
                         .padding(8)
                     })
                     Divider()
-                        .background(.tmYellow2)
+                        .background(.tmGray)
                     
                 }
                 .padding()

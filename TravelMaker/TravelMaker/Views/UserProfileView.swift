@@ -32,15 +32,26 @@ struct UserProfileView: View {
                 .padding(5)
                 
                 Text("프로필 설정")
+                    .foregroundStyle(.tmBlack)
+                    .font(.system(size: 20))
+                    .padding(8)
                 
                 NavigationLink{
                     MyTravelView()
                 } label: {
                     Text("예약 내역")
+                        .foregroundStyle(.tmBlack)
+                        .font(.system(size: 20))
+                        .padding(8)
                 }
                 
                 Text("앱 환경 설정")
+                    .foregroundStyle(.tmBlack)
+                    .font(.system(size: 20))
+                    .padding(8)
                 Text("로그아웃")
+                    .font(.system(size: 20))
+                    .padding(8)
                     .foregroundStyle(.red)
                 
             }
