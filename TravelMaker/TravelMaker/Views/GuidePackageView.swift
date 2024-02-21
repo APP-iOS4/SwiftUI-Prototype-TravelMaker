@@ -14,8 +14,6 @@ struct GuidePackageView: View {
     var travels: [TravelModel] = TravelModelStore().travelStore
     
     var body: some View {
-//        NavigationStack {
-            ScrollView{
                 
                 VStack(alignment: .leading) {
                     
@@ -77,8 +75,7 @@ struct GuidePackageView: View {
                     }
                     
                 }
-            }
-//        }
+            
         .padding()
         .background(Color.white)
         .cornerRadius(10)

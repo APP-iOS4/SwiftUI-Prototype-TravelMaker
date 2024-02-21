@@ -14,42 +14,43 @@ struct CategoryView: View {
     @State var tagIndex: Int = 0
     let travel = TravelModelStore().travelStore
     var body: some View {
-        VStack {
-            // 버튼 목록
-            HStack {
-                ForEach(0..<tagImages.count, id:\.self) { index in
-                    Button {
-                        isTagSelected = Array(repeating: false, count: 6)
-                        isTagSelected[index] = true // 토글
-                        tagIndex = index
-                        
-                    } label: {
-                        Spacer()
-                        VStack {
-                            // 테마 아이콘
-                            Image(systemName: tagImages[index])
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(isTagSelected[index] ? .tmBlue1 : .tmGray)
+            VStack {
+                // 버튼 목록
+                HStack {
+                    ForEach(0..<tagImages.count, id:\.self) { index in
+                        Button {
+                            isTagSelected = Array(repeating: false, count: 6)
+                            isTagSelected[index] = true // 토글
+                            tagIndex = index
                             
-                            // 테마 이름
-                            Text(tagNames[index])
-                                .foregroundColor(isTagSelected[index] ? .tmBlue1 : .tmGray)
-                                .padding(10)
-                                .cornerRadius(10)
-                                .fontWeight(.bold)
+                        } label: {
+                            Spacer()
+                            VStack {
+                                // 테마 아이콘
+                                Image(systemName: tagImages[index])
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(isTagSelected[index] ? .tmBlue1 : .tmGray)
+                                
+                                // 테마 이름
+                                Text(tagNames[index])
+                                    .foregroundColor(isTagSelected[index] ? .tmBlue1 : .tmGray)
+                                    .padding(10)
+                                    .cornerRadius(10)
+                                    .fontWeight(.bold)
+                            }
                         }
                     }
+                    Spacer()
+                    
                 }
-                Spacer()
+                GuidePackageView(tagIndex: tagIndex)
                 
             }
-            GuidePackageView(tagIndex: tagIndex)
-           
-        }
+        
     }
-    }
+}
 
 
 #Preview {
