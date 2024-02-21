@@ -39,6 +39,8 @@ struct MessageView: View {
                                     .foregroundStyle(.tmGray)
                             }
                             
+                            Spacer()
+                            
                             Image(systemName: "1.circle.fill")
                                 .foregroundColor(.tmYellow2)
                                 .font(.system(size: 23))

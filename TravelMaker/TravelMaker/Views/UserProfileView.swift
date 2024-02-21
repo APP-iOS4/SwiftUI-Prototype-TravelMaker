@@ -13,7 +13,7 @@ struct UserProfileView: View {
             
             List{
                 HStack(spacing: 20) {
-                    Image("leasure3")
+                    Image("user")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 100, height: 100)
