@@ -41,7 +41,7 @@ struct DetailView: View {
                         VStack{
                             HStack{
                                 VStack (alignment: .leading){
-                                    Text(travel.author.name + " 님의 여행 가이드")
+                                    Text(travel.author.name + " 메이커와의 여행")
                                         .font(.title2)
                                         .padding(.top, 20.0)
                                     
@@ -54,7 +54,7 @@ struct DetailView: View {
                                             .foregroundStyle(.yellow)
                                         Text("5.0")
                                         
-                                        Text("현지 거주 10년차")
+                                        Text("현지 거주 10년")
                                             .padding(EdgeInsets(top: 3, leading: 5, bottom: 3, trailing: 5))
                                             .background(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)).foregroundStyle(.tmYellow2))
                                         
@@ -74,7 +74,7 @@ struct DetailView: View {
                                 NavigationLink{
                                     ProfileView()
                                 } label: {
-                                    ButtonWhite(text: "가이드 프로필")
+                                    ButtonWhite(text: "여행 메이커 프로필")
                                 }
                                 NavigationLink{
                                     MessageDetailView(messageModel: MessageModelStore().messages.first!)
@@ -218,7 +218,7 @@ struct DetailView: View {
                     Divider()
                     Section{
                         VStack(alignment: .leading){
-                            Text("가이드 상품선택")
+                            Text("여행 상품 선택")
                                 .font(.title)
                                 .padding(.top, 20.0)
                             Button{
@@ -227,11 +227,11 @@ struct DetailView: View {
                                 HStack {
                                     Image(travel.author.profileImage)
                                         .resizable()
-                                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                        .clipShape(Circle())
                                         .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
                                     
                                     VStack(alignment: .leading){
-                                        Text(travel.author.name + " 님의 여행 가이드")
+                                        Text(travel.author.name + " 메이커와의 여행")
                                             .font(.title3)
                                         Text("\(travel.price ?? 0)")
                                     }

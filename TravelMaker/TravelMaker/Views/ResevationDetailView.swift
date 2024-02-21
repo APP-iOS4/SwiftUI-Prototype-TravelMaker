@@ -27,7 +27,7 @@ struct ResevationDetailView: View {
                             Text(travel.title)
                                 .foregroundStyle(Color.tmBlack)
                                 .font(.title2)
-                            Text(travel.author.name + " 메이커님의 여행")
+                            Text("\(travel.author.name) 메이커와의 여행")
                             
                         }
                     }
@@ -35,7 +35,7 @@ struct ResevationDetailView: View {
                 }
                 VStack(alignment: .leading){
                     
-                    Text("예약 총 금액 2000,000원")
+                    Text("예약 총 금액 200,000원")
                         .font(.title2)
                         .multilineTextAlignment(.leading)
                         .bold()

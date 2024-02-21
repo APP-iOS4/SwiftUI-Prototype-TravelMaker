@@ -16,7 +16,7 @@ struct GuidePackageView: View {
     var body: some View {
                 
                 VStack(alignment: .leading) {
-                    Text("게스트들이 선호하는 가이드 상품")
+                    Text("게스트들이 선호하는 여행 상품")
                         .font(.title2)
                         .fontWeight(.heavy)
                         //.padding()
@@ -41,7 +41,7 @@ struct GuidePackageView: View {
                                             .shadow(radius: 5)
                                             .padding(.bottom, 10.0)
                                         VStack (alignment: .leading) {
-                                            Text("\(travel.author.name) 가이드님의 아름다운 휴양지") // 가이드 이름
+                                            Text("여행메이커 \(travel.author.name)의 아름다운 휴양지") // 가이드 이름
                                                 .font(.headline)
                                                 .padding(.bottom, 1)
                                             HStack {

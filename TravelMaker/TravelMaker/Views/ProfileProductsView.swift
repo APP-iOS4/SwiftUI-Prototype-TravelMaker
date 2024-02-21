@@ -14,12 +14,12 @@ struct ProfileProductsView: View {
         NavigationStack {
             NavigationLink(destination: DetailView(travel: travel), label: {
                 VStack(alignment: .leading) {
-                    Image("yeomiji")
+                    Image("food1")
                         .resizable()
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 25.0))
                     
-                    Text("자연을 즐기는 장가계")
+                    Text("제주도 맛집탐방")
                         .foregroundStyle(.tmBlack)
                         .fontWeight(.bold)
                         .font(.system(size: 23))

@@ -84,7 +84,7 @@ struct ProfileView: View {
                             Text("게시한 상품 & 일정")
                                 .font(.system(size: 20))
                             Spacer()
-                            Image(systemName: "greaterthan")
+                            Image(systemName: "chevron.right")
                                 .foregroundStyle(.tmGray)
                         }
                         .foregroundStyle(.tmBlack)
