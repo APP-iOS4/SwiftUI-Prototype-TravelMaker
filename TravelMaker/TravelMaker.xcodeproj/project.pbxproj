@@ -26,7 +26,6 @@
 		042090052B85CC19006B1C38 /* ResevationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042090042B85CC19006B1C38 /* ResevationDetailView.swift */; };
 		045B512D2B86D8EB00EB1514 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B512C2B86D8EB00EB1514 /* ReviewView.swift */; };
 		045B512F2B86D98300EB1514 /* CustomCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B512E2B86D98300EB1514 /* CustomCenterView.swift */; };
-		045B51312B870A7900EB1514 /* ReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B51302B870A7900EB1514 /* ReservationModel.swift */; };
 		045B51352B871B8700EB1514 /* GuideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B51342B871B8700EB1514 /* GuideDetailView.swift */; };
 		9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675A2B84253B0093969F /* TravelMakerApp.swift */; };
 		9B47675D2B84253B0093969F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675C2B84253B0093969F /* ContentView.swift */; };
@@ -76,7 +75,6 @@
 		042090042B85CC19006B1C38 /* ResevationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResevationDetailView.swift; sourceTree = "<group>"; };
 		045B512C2B86D8EB00EB1514 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		045B512E2B86D98300EB1514 /* CustomCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCenterView.swift; sourceTree = "<group>"; };
-		045B51302B870A7900EB1514 /* ReservationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationModel.swift; sourceTree = "<group>"; };
 		045B51342B871B8700EB1514 /* GuideDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideDetailView.swift; sourceTree = "<group>"; };
 		9B4767572B84253B0093969F /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B47675A2B84253B0093969F /* TravelMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMakerApp.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 				9B79DB6D2B843537009A6BFD /* UserModelStore.swift */,
 				9B79DB7A2B8439D9009A6BFD /* MessageModel.swift */,
 				9B79DB7C2B843A32009A6BFD /* MessageModelStore.swift */,
-				045B51302B870A7900EB1514 /* ReservationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,7 +363,6 @@
 				9B47675D2B84253B0093969F /* ContentView.swift in Sources */,
 				CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */,
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
-				045B51312B870A7900EB1514 /* ReservationModel.swift in Sources */,
 				045B512F2B86D98300EB1514 /* CustomCenterView.swift in Sources */,
 				04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */,
 				9BF0637E2B85CA750026BE3A /* UserProfileView.swift in Sources */,
