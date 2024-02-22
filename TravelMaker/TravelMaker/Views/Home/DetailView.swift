@@ -127,14 +127,16 @@ struct DetailView: View {
                                             .resizable()
                                             .frame(width: 25, height: 25)
                                     }
-                                    Spacer()
+                                    
                                     Text("\(adultNumber)")
                                         .font(.title3)
                                         .foregroundStyle(Color.tmBlack)
-                                    Spacer()
+                                        .frame(width: 100)
+                                    
                                     Button{
-                                        adultNumber += 1
-                                        
+                                        if adultNumber < 20{
+                                            adultNumber += 1
+                                        }
                                     } label: {
                                         Image(systemName: "plus.circle")
                                             .resizable()
@@ -161,13 +163,16 @@ struct DetailView: View {
                                             .resizable()
                                             .frame(width: 25, height: 25)
                                     }
-                                    Spacer()
+                                    
                                     Text("\(childNumber)")
                                         .font(.title3)
                                         .foregroundStyle(Color.tmBlack)
-                                    Spacer()
+                                        .frame(width: 100)
+                                    
                                     Button{
-                                        childNumber += 1
+                                        if childNumber < 20{
+                                            childNumber += 1
+                                        }
                                         
                                     } label: {
                                         Image(systemName: "plus.circle")
@@ -196,13 +201,16 @@ struct DetailView: View {
                                             .resizable()
                                             .frame(width: 25, height: 25)
                                     }
-                                    Spacer()
+                                    
                                     Text("\(babyNumber)")
                                         .font(.title3)
                                         .foregroundStyle(Color.tmBlack)
-                                    Spacer()
+                                        .frame(width: 100)
+                                    
                                     Button{
-                                        babyNumber += 1
+                                        if babyNumber < 20{
+                                            babyNumber += 1
+                                        }
                                         
                                     } label: {
                                         Image(systemName: "plus.circle")
@@ -233,7 +241,7 @@ struct DetailView: View {
                                         .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
                                     
                                     VStack(alignment: .leading){
-                                        Text(travel.author.name + " 메이커와의 여행")
+                                        Text("\(travel.author.name) 메이커와의 여행")
                                             .font(.title3)
                                         Text("\(travel.price ?? 0)")
                                     }
@@ -256,9 +264,9 @@ struct DetailView: View {
                                         .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
                                     
                                     VStack(alignment: .leading){
-                                        Text(travel.author.name + " 메이커의 일정표 제공")
+                                        Text("\(travel.author.name) 메이커의 일정표 제공")
                                             .font(.title3)
-                                        Text("\(20000)")
+                                        Text("\(5000)")
                                     }
                                     .foregroundStyle(Color.tmBlack)
                                     Spacer()
@@ -274,10 +282,10 @@ struct DetailView: View {
                                     .font(.title)
                                 Spacer()
                                 if button1Checked && button2Checked {
-                                    Text("\(70000) 원")
+                                    Text("\((travel.price ?? 0) + 5000) 원")
                                         .font(.title)
                                 } else if button2Checked {
-                                    Text("\(20000) 원")
+                                    Text("\(5000) 원")
                                         .font(.title)
                                 } else if button1Checked {
                                     Text("\(travel.price ?? 0) 원")
@@ -311,7 +319,18 @@ struct DetailView: View {
                 .padding(20.0)
                 
             }
-            .ignoresSafeArea()
+            // .ignoresSafeArea()
+            .toolbar{
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        isShowing.toggle()
+                    } label: {
+                        Label("닫기", systemImage: "chevron.backward")
+                            
+                    }
+                    .foregroundStyle(Color.accentColor)
+                }
+            }
         }
         
     }

@@ -47,7 +47,7 @@ struct MyTravelSubView: View {
                         }
                     
                         NavigationLink{
-                            ReviewView()
+                            ReviewView(name: name)
                         } label: {
                         if state == "여행완료" {
                             ButtonBackground(text: "리뷰 남기기")
