@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReservationSuccess: View {
-    @Binding var path: Bool
+    @Binding var isShowing: Bool
     
     var body: some View {
         
@@ -17,21 +17,14 @@ struct ReservationSuccess: View {
             .frame(width: 60.0, height: 60.0)
             .foregroundColor(Color.green)
         Text("예약이 완료되었습니다")
-//        
-//        NavigationLink(destination: HomeView(path: true), label: {
-//            Text("홈으로")
-//        })
         
-//        Button(action: {
-//            path = true
-//        }, label: {
-//            Text("홈으로")
-//        })
-//        
-
+        Button(action: {
+            isShowing.toggle()
+        }, label: {
+            ButtonBackground(text: "메인으로")
+                .padding(20)
+        })
+        
     }
 }
-//
-//#Preview {
-//    //ReservationSuccess()
-//}
+

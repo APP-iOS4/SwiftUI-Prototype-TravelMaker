@@ -17,9 +17,8 @@ struct DetailView: View {
     @State var babyNumber: Int = 0
     @State var button1Checked: Bool = false
     @State var button2Checked: Bool = false
-    @State var isPresented: Bool = false
     
-    @State var path: Bool
+    @Binding var isShowing: Bool
 
     var body: some View {
         NavigationStack{
@@ -291,7 +290,7 @@ struct DetailView: View {
                         if button1Checked || button2Checked {
                             NavigationLink{
                                
-                                ReservationSuccess(path: $path)
+                                ReservationSuccess(isShowing: $isShowing)
                                 
                             } label: {
                                 ButtonBackground(text: "예약하기")

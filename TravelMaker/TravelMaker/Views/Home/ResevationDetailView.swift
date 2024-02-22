@@ -10,6 +10,8 @@ import SwiftUI
 struct ResevationDetailView: View {
     let userStore = UserModelStore().userStore
     var travel: TravelModel
+    
+    @State var isShowing: Bool = false
     var body: some View {
         NavigationStack{
             
@@ -21,7 +23,7 @@ struct ResevationDetailView: View {
                         .frame(maxHeight: 150.0)
                         .clipShape(RoundedRectangle(cornerRadius: 10.0))
                     NavigationLink {
-                        DetailView(travel: travel, path: false)
+                        DetailView(travel: travel, isShowing: $isShowing)
                     } label: {
                         VStack(alignment: .leading){
                             Text(travel.title)

@@ -51,7 +51,6 @@
 		CB01F26F2B846FD0005D3C32 /* ProfileProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */; };
 		CB3CCE322B85C51F00653C42 /* ButtonGray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3CCE312B85C51F00653C42 /* ButtonGray.swift */; };
 		D792C75F2B84958100091E40 /* GuidePackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792C75E2B84958100091E40 /* GuidePackageView.swift */; };
-		D792C7612B8495B100091E40 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792C7602B8495B100091E40 /* CategoryView.swift */; };
 		D792C7632B8495CE00091E40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792C7622B8495CE00091E40 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +100,6 @@
 		CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProductsView.swift; sourceTree = "<group>"; };
 		CB3CCE312B85C51F00653C42 /* ButtonGray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGray.swift; sourceTree = "<group>"; };
 		D792C75E2B84958100091E40 /* GuidePackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePackageView.swift; sourceTree = "<group>"; };
-		D792C7602B8495B100091E40 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		D792C7622B8495CE00091E40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,7 +207,6 @@
 				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
 				042090042B85CC19006B1C38 /* ResevationDetailView.swift */,
 				D792C75E2B84958100091E40 /* GuidePackageView.swift */,
-				D792C7602B8495B100091E40 /* CategoryView.swift */,
 				D792C7622B8495CE00091E40 /* HomeView.swift */,
 				04208FE32B844602006B1C38 /* DetailView.swift */,
 			);
@@ -368,7 +365,6 @@
 				045B512D2B86D8EB00EB1514 /* ReviewView.swift in Sources */,
 				D792C75F2B84958100091E40 /* GuidePackageView.swift in Sources */,
 				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
-				D792C7612B8495B100091E40 /* CategoryView.swift in Sources */,
 				9B79DB7B2B8439D9009A6BFD /* MessageModel.swift in Sources */,
 				CB01F26B2B845CCA005D3C32 /* SearchBar.swift in Sources */,
 				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
