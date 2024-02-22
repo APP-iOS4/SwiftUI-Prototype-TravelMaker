@@ -4,19 +4,30 @@
 
 7회차 실습조 LAB2 TravelMaker 프로토타입 개발
 
-## 2조 조원이름
-- 김기표 [@rlvy0513](https://github.com/rlvy0513)
-######
-- 이우석 [@wl00ie19](https://github.com/wl00ie19)
-######
-- 전유진 [@UDI94](https://github.com/UDI94)
-######
-- 최주리 [@juri123123](https://github.com/juri123123)
+## 개발 기간
+
+- 총 개발 기간 : 2024년 02월 19일 ~ 22일 (총 4일)
+
+- 기획 및 프로토타입 제작 : 1일
+
+- 개발 및 피드백 : 3일
+
+
+
+## 팀원 소개
+|          |  &nbsp; 이름 &nbsp; &nbsp; &nbsp;   | GitHub      | 프로젝트 소감 |
+| -------- | ------- | ----------- | ---------- |
+| <img src="https://avatars.githubusercontent.com/u/103730885?v=4" alt="drawing" width="100"/> |  김기표 &nbsp;  | [@rlvy0513](https://github.com/rlvy0513)   | 프로토타입이지만 SwiftUI를 사용한 첫 프로젝트를 끝내 힘들었지만 즐거운 시간이었습니다 ! |
+| <img src="https://cdn.discordapp.com/attachments/1169156921736056833/1210121783722770452/IMG_1728-crop.JPG?ex=65e968bc&is=65d6f3bc&hm=2e288b93deda6605a0c836024e1397a14756111f3ee250b1a07fe01d89bb2dc1&" alt="drawing" width="100"/> | 이우석 &nbsp; | [@wl00ie19](https://github.com/wl00ie19) | 프로토타이핑을 통해 SwiftUI에서의 모델과 뷰를 만드는 방법들을 응용하고, 문제상황에 대처하는 방법을 배울 수 있는 유익한 시간이었습니다. |
+| <img src="https://media.discordapp.net/attachments/1169156921736056833/1210113063022231562/UDI_memoji.png?ex=65e9609d&is=65d6eb9d&hm=c10743a94ea0cdf3d5b733b69f5e9cb83904ba278b3dfa88d95635a0f93d5972&=" alt="drawing" width="100"/> | 전유진 &nbsp; | [@UDI94](https://github.com/UDI94) | SwiftUI를 적용하여 UI를 구성하고 프로토타입을 구현하여 각각의 모델 데이터를 UI에 바인딩하여 구현하는 법을 알 수 있었습니다. <br> 다음 구현시에는 좀 더 페르소나를 중심으로 기획을 하여 이해도 높은 앱을 구현하고 싶습니다. |
+| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-TravelMaker/assets/80569323/0eb9d006-1699-446d-a34d-096248d2b61c" alt="drawing" width="100"/> | 최주리 &nbsp; | [@juri123123](https://github.com/juri123123)  | NavigationLink에 대한 이해와 fullscreenCover에 대한 공부를 할 수 있었습니다. 많은 교훈을 얻은 프로젝트였습니다! |
+<br>
 
 ## ADS
-* 여행객은 현지인을 통해서 여행 정보를 제공받을 수 있는 앱
+* 여행객이 현지인을 통해서 여행 정보를 제공받을 수 있는 앱
 * 여행을 준비할 때 해당 지역에 대해 궁금한 부분을 검증된 현지 가이드에게 직접 물어보고 짤 수 있는 앱
 * 광고성 게시물이 아닌 자신의 취향에 맞게 여행을 원하는 사람을 위한 앱
+* 취향에 따라 가이드와 동행하고 싶지 않은 여행객도 현지인이 짠 스케줄을 받아 충분한 여행을 즐길 수 있는 앱
 
 
 ## 개발 및 배포 환경
@@ -65,9 +76,7 @@
 
 
 ## 앞으로 구현할 내용
-- 예약완료 창에서 홈으로 돌아가는 버튼
 - 메세지 작성 시 키보드 올라왔을 때 화면도 함께 올라가는 기능
-- 후기 작성 기능 (별점 혹은 평점 시스템 도입)
 - 예약 시 상세 가이드 내역 확인 기능 추가
   - 상세한 여행지 목록, 음식점 목록등
 
