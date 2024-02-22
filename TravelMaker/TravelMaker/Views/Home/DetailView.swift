@@ -321,14 +321,16 @@ struct DetailView: View {
             }
             // .ignoresSafeArea()
             .toolbar{
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        isShowing.toggle()
-                    } label: {
-                        Label("닫기", systemImage: "chevron.backward")
+                if isShowing{
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            isShowing.toggle()
+                        } label: {
+                            Label("닫기", systemImage: "chevron.backward")
                             
+                        }
+                        .foregroundStyle(Color.accentColor)
                     }
-                    .foregroundStyle(Color.accentColor)
                 }
             }
         }
