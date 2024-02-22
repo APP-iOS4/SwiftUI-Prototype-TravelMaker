@@ -21,8 +21,12 @@ struct MyTravelView: View {
                     
                     VStack {
                         Text("예약 내역에 문제가 있나요?")
-                        Text("고객센터 도움받기")
-                            .underline()
+                        NavigationLink{
+                            CustomCenterView()
+                        }label: {
+                            Text("고객센터 도움받기")
+                                .underline()
+                        }
                     }
                     .padding(.top, 50)
                 }

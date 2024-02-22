@@ -24,6 +24,8 @@
 		042090012B8575AF006B1C38 /* art3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 04208FF32B8575AF006B1C38 /* art3.JPG */; };
 		042090022B8575AF006B1C38 /* leasure1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 04208FF42B8575AF006B1C38 /* leasure1.JPG */; };
 		042090052B85CC19006B1C38 /* ResevationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042090042B85CC19006B1C38 /* ResevationDetailView.swift */; };
+		045B512D2B86D8EB00EB1514 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B512C2B86D8EB00EB1514 /* ReviewView.swift */; };
+		045B512F2B86D98300EB1514 /* CustomCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B512E2B86D98300EB1514 /* CustomCenterView.swift */; };
 		9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675A2B84253B0093969F /* TravelMakerApp.swift */; };
 		9B47675D2B84253B0093969F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B47675C2B84253B0093969F /* ContentView.swift */; };
 		9B47675F2B84253C0093969F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B47675E2B84253C0093969F /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 		04208FF32B8575AF006B1C38 /* art3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = art3.JPG; sourceTree = "<group>"; };
 		04208FF42B8575AF006B1C38 /* leasure1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leasure1.JPG; sourceTree = "<group>"; };
 		042090042B85CC19006B1C38 /* ResevationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResevationDetailView.swift; sourceTree = "<group>"; };
+		045B512C2B86D8EB00EB1514 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		045B512E2B86D98300EB1514 /* CustomCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCenterView.swift; sourceTree = "<group>"; };
 		9B4767572B84253B0093969F /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B47675A2B84253B0093969F /* TravelMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelMakerApp.swift; sourceTree = "<group>"; };
 		9B47675C2B84253B0093969F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 			children = (
 				CB01F2642B843A7E005D3C32 /* MyTravelView.swift */,
 				CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */,
+				045B512C2B86D8EB00EB1514 /* ReviewView.swift */,
+				045B512E2B86D98300EB1514 /* CustomCenterView.swift */,
 			);
 			path = MyTravel;
 			sourceTree = "<group>";
@@ -354,10 +360,12 @@
 				9B47675D2B84253B0093969F /* ContentView.swift in Sources */,
 				CB01F2652B843A7E005D3C32 /* MyTravelView.swift in Sources */,
 				9B47675B2B84253B0093969F /* TravelMakerApp.swift in Sources */,
+				045B512F2B86D98300EB1514 /* CustomCenterView.swift in Sources */,
 				04208FE62B84895F006B1C38 /* ReservationSuccess.swift in Sources */,
 				9BF0637E2B85CA750026BE3A /* UserProfileView.swift in Sources */,
 				9B79DB7F2B844019009A6BFD /* MessageDetailView.swift in Sources */,
 				9B79DB6E2B843537009A6BFD /* UserModelStore.swift in Sources */,
+				045B512D2B86D8EB00EB1514 /* ReviewView.swift in Sources */,
 				D792C75F2B84958100091E40 /* GuidePackageView.swift in Sources */,
 				9B4767702B8431940093969F /* ButtonBackground.swift in Sources */,
 				D792C7612B8495B100091E40 /* CategoryView.swift in Sources */,

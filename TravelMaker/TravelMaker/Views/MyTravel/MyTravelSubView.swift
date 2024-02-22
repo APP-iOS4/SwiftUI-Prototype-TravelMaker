@@ -45,16 +45,17 @@ struct MyTravelSubView: View {
                         } label: {
                             ButtonWhite(text: "예약내역 상세")
                         }
-                    Button(action: {
-                        //뷰생성
-                    }, label: {
+                    
+                        NavigationLink{
+                            ReviewView()
+                        } label: {
                         if state == "여행완료" {
                             ButtonBackground(text: "리뷰 남기기")
                         } else {
                             
                         }
                         
-                    })
+                    }
                     
                     
                 }
