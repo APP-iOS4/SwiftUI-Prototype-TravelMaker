@@ -105,6 +105,7 @@
 		CB3CCE312B85C51F00653C42 /* ButtonGray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGray.swift; sourceTree = "<group>"; };
 		D792C75E2B84958100091E40 /* GuidePackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePackageView.swift; sourceTree = "<group>"; };
 		D792C7622B8495CE00091E40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D792C76B2B8720CE00091E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		9B4767592B84253B0093969F /* TravelMaker */ = {
 			isa = PBXGroup;
 			children = (
+				D792C76B2B8720CE00091E40 /* Info.plist */,
 				9B47675A2B84253B0093969F /* TravelMakerApp.swift */,
 				9B79DB762B843922009A6BFD /* Views */,
 				9B79DB712B8435C9009A6BFD /* Images */,
@@ -512,6 +514,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TravelMaker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelMaker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -540,6 +543,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TravelMaker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelMaker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
