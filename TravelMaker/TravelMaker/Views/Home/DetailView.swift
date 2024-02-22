@@ -15,8 +15,11 @@ struct DetailView: View {
     @State var adultNumber: Int = 0
     @State var childNumber: Int = 0
     @State var babyNumber: Int = 0
-    @State var buttonChecked: Bool = false
+    @State var button1Checked: Bool = false
+    @State var button2Checked: Bool = false
     @State var isPresented: Bool = false
+    
+    @State var path: Bool
 
     var body: some View {
         NavigationStack{
@@ -222,7 +225,7 @@ struct DetailView: View {
                                 .font(.title)
                                 .padding(.top, 20.0)
                             Button{
-                                buttonChecked.toggle()
+                                button1Checked.toggle()
                             }label:{
                                 HStack {
                                     Image(travel.author.profileImage)
@@ -241,14 +244,43 @@ struct DetailView: View {
                                         .resizable()
                                         .frame(maxWidth: 30.0, maxHeight: 30.0, alignment: .center)
                                         .padding(.trailing, 10.0)
-                                        .foregroundStyle(buttonChecked ? Color.green : Color(UIColor.systemGray5))
+                                        .foregroundStyle(button1Checked ? Color.green : Color(UIColor.systemGray5))
+                                }
+                            }
+                            Button{
+                                button2Checked.toggle()
+                            }label:{
+                                HStack {
+                                    Image(travel.author.profileImage)
+                                        .resizable()
+                                        .clipShape(Circle())
+                                        .frame(maxWidth: 60.0, maxHeight: 60.0, alignment: .center)
+                                    
+                                    VStack(alignment: .leading){
+                                        Text(travel.author.name + " 메이커의 일정표 제공")
+                                            .font(.title3)
+                                        Text("\(20000)")
+                                    }
+                                    .foregroundStyle(Color.tmBlack)
+                                    Spacer()
+                                    Image(systemName: "checkmark.circle")
+                                        .resizable()
+                                        .frame(maxWidth: 30.0, maxHeight: 30.0, alignment: .center)
+                                        .padding(.trailing, 10.0)
+                                        .foregroundStyle(button2Checked ? Color.green : Color(UIColor.systemGray5))
                                 }
                             }
                             HStack{
                                 Text("총 금액")
                                     .font(.title)
                                 Spacer()
-                                if buttonChecked {
+                                if button1Checked && button2Checked {
+                                    Text("\(70000) 원")
+                                        .font(.title)
+                                } else if button2Checked {
+                                    Text("\(20000) 원")
+                                        .font(.title)
+                                } else if button1Checked {
                                     Text("\(travel.price ?? 0) 원")
                                         .font(.title)
                                 }
@@ -256,13 +288,13 @@ struct DetailView: View {
                             .padding(.top, 30.0)
                             
                         }
-                        if buttonChecked{
+                        if button1Checked || button2Checked {
                             NavigationLink{
-                                if buttonChecked {
-                                    ReservationSuccess()
-                                }
+                               
+                                ReservationSuccess(path: $path)
+                                
                             } label: {
-                                ButtonWhite(text: "예약하기")
+                                ButtonBackground(text: "예약하기")
                             }
                             
                         }

@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct GuidePackageView: View {
-    
+    @State var path: Bool
     var tagIndex : Int
     let userStore = UserModelStore().userStore
     var travels: [TravelModel] = TravelModelStore().travelStore
     
     var body: some View {
                 
-                VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 1) {
                     Text("게스트들이 선호하는 여행 상품")
                         .font(.title2)
                         .fontWeight(.heavy)
                         //.padding()
                     ForEach(filteredData(index: tagIndex)) {travel in
                         NavigationLink {
-                            DetailView(travel: travel)
+                            DetailView(travel: travel, path: path)
                         } label: {
                             VStack (alignment: .leading){
                                 Image(travel.imageName) // 여행지 사진
@@ -30,7 +30,8 @@ struct GuidePackageView: View {
                                     .aspectRatio(contentMode: .fill)
                                     .frame(height: 200)
                                     .cornerRadius(10)
-                                    .padding(.vertical, 10.0)
+                                    .padding(.bottom, 10)
+                   
                                 
                                 Section{
                                     HStack {
@@ -62,21 +63,22 @@ struct GuidePackageView: View {
                                     Text(travel.title) // 피드 제목
                                         .font(.title2)
                                         .fontWeight(.bold)
-                                    
-                                    VStack(alignment: .leading) {
-                                        Text("위치: \(travel.location)") // 위치
-                                            .font(.subheadline)
-                                        Text("2박3일") // 위치
-                                            .font(.subheadline)
+                                    HStack {
+                      
+                              
+                                            Text("위치: \(travel.location)") // 위치
+                                                .font(.subheadline)
+                                            
+                                            Spacer()
+                                            Text("2박3일") // 위치
+                                                .font(.subheadline)
+    
                                         
                                     }
                                     
                                 }
-                                
-                               // Divider()
                             }
                         }
-                
                     }
                     .padding()
                     .background(Color.white)
@@ -103,6 +105,6 @@ struct GuidePackageView: View {
     }
 }
 
-#Preview {
-    GuidePackageView(tagIndex: 1)
-}
+//#Preview {
+//    GuidePackageView(tagIndex: 1, path: false)
+//}

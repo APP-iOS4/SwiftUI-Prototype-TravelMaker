@@ -190,25 +190,65 @@
 			isa = PBXGroup;
 			children = (
 				9B47675C2B84253B0093969F /* ContentView.swift */,
-				9B47676F2B8431940093969F /* ButtonBackground.swift */,
+				CB13B3D82B86CB5900546773 /* Common */,
+				CB13B3D72B86CB0600546773 /* Profile */,
+				CB13B3D62B86CAFD00546773 /* Message */,
+				CB13B3D52B86CAF700546773 /* MyTravel */,
+				CB13B3D42B86CAEF00546773 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB13B3D42B86CAEF00546773 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
+				042090042B85CC19006B1C38 /* ResevationDetailView.swift */,
 				D792C75E2B84958100091E40 /* GuidePackageView.swift */,
 				D792C7602B8495B100091E40 /* CategoryView.swift */,
 				D792C7622B8495CE00091E40 /* HomeView.swift */,
 				04208FE32B844602006B1C38 /* DetailView.swift */,
-				04208FE52B84895F006B1C38 /* ReservationSuccess.swift */,
-				CB01F26C2B8460FC005D3C32 /* ProfileView.swift */,
-				9BF0637D2B85CA750026BE3A /* UserProfileView.swift */,
-				CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */,
-				9B79DB782B84399A009A6BFD /* MessageView.swift */,
-				9B79DB7E2B844019009A6BFD /* MessageDetailView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB13B3D52B86CAF700546773 /* MyTravel */ = {
+			isa = PBXGroup;
+			children = (
 				CB01F2642B843A7E005D3C32 /* MyTravelView.swift */,
 				CB01F2662B843D40005D3C32 /* MyTravelSubView.swift */,
+			);
+			path = MyTravel;
+			sourceTree = "<group>";
+		};
+		CB13B3D62B86CAFD00546773 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9B79DB782B84399A009A6BFD /* MessageView.swift */,
+				9B79DB7E2B844019009A6BFD /* MessageDetailView.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		CB13B3D72B86CB0600546773 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CB01F26C2B8460FC005D3C32 /* ProfileView.swift */,
+				CB01F26E2B846FD0005D3C32 /* ProfileProductsView.swift */,
+				9BF0637D2B85CA750026BE3A /* UserProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CB13B3D82B86CB5900546773 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9B47676F2B8431940093969F /* ButtonBackground.swift */,
 				CB01F2682B843E0D005D3C32 /* ButtonWhite.swift */,
 				CB01F26A2B845CCA005D3C32 /* SearchBar.swift */,
 				CB3CCE312B85C51F00653C42 /* ButtonGray.swift */,
-				042090042B85CC19006B1C38 /* ResevationDetailView.swift */,
 			);
-			path = Views;
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

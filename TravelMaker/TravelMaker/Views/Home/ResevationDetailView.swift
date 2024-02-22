@@ -21,7 +21,7 @@ struct ResevationDetailView: View {
                         .frame(maxHeight: 150.0)
                         .clipShape(RoundedRectangle(cornerRadius: 10.0))
                     NavigationLink {
-                        DetailView(travel: travel)
+                        DetailView(travel: travel, path: false)
                     } label: {
                         VStack(alignment: .leading){
                             Text(travel.title)

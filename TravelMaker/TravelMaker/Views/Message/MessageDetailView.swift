@@ -21,7 +21,7 @@ struct MessageDetailView: View {
                         VStack(alignment: .leading){
                             ZStack(alignment: .leading){
                                 RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                    .foregroundStyle(.tmBlue2)
+                                    .foregroundStyle(.tmBlue1)
                                 Text("\(message.message)")
                                     .foregroundStyle(.tmBlack)
                                     .padding(10)

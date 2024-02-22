@@ -12,7 +12,7 @@ struct ProfileProductsView: View {
     var body: some View {
         
         NavigationStack {
-            NavigationLink(destination: DetailView(travel: travel), label: {
+            NavigationLink(destination: DetailView(travel: travel, path: false), label: {
                 VStack(alignment: .leading) {
                     Image("food1")
                         .resizable()

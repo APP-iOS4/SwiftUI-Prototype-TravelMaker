@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var path: Bool = false
     let travelStore: [TravelModel] = TravelModelStore().travelStore
     var body: some View {
         NavigationStack {
             VStack{
-                VStack {
+                VStack(spacing: 5) {
                     Text("Travel Maker")
                         .font(.largeTitle)
                         .foregroundStyle(Color.tmBlue2)
@@ -23,18 +24,14 @@ struct HomeView: View {
                 Divider()
                 ScrollView{
                     VStack(alignment: .leading){
-                        CategoryView()
+                        CategoryView(path: path)
                     }
-                    
-                    
-                    
                 }
             }
             .onTapGesture {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
-        }
-        
+        } 
     }
 }
 
