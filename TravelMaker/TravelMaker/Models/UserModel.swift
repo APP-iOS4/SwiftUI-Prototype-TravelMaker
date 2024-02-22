@@ -16,4 +16,5 @@ struct UserModel: Identifiable {
     let location: String
     let language: String
     let isGuide: Bool
+    let guideDescription: String?
 }
