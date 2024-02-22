@@ -15,8 +15,8 @@
 
 
 ## 팀원 소개
-|          |  &nbsp; 이름 &nbsp; &nbsp; &nbsp;   | GitHub      | 프로젝트 소감 |
-| -------- | ------- | ----------- | ---------- |
+|          | 이름  | GitHub      | 프로젝트 소감 |
+| -------- | :-------: | :-----------: | ---------- |
 | <img src="https://avatars.githubusercontent.com/u/103730885?v=4" alt="drawing" width="100"/> |  김기표  | [@rlvy0513](https://github.com/rlvy0513)   | 프로토타입이지만 SwiftUI를 사용한 첫 프로젝트를 끝내 힘들었지만 즐거운 시간이었습니다 ! |
 | <img src="https://cdn.discordapp.com/attachments/1169156921736056833/1210121783722770452/IMG_1728-crop.JPG?ex=65e968bc&is=65d6f3bc&hm=2e288b93deda6605a0c836024e1397a14756111f3ee250b1a07fe01d89bb2dc1&" alt="drawing" width="100"/> | 이우석 | [@wl00ie19](https://github.com/wl00ie19) | 프로토타이핑을 통해 SwiftUI에서의 모델과 뷰를 만드는 방법들을 응용하고, 문제상황에 대처하는 방법을 배울 수 있는 유익한 시간이었습니다. |
 | <img src="https://media.discordapp.net/attachments/1169156921736056833/1210113063022231562/UDI_memoji.png?ex=65e9609d&is=65d6eb9d&hm=c10743a94ea0cdf3d5b733b69f5e9cb83904ba278b3dfa88d95635a0f93d5972&=" alt="drawing" width="100"/> | 전유진 | [@UDI94](https://github.com/UDI94) | SwiftUI를 적용하여 UI를 구성하고 프로토타입을 구현하여 각각의 모델 데이터를 UI에 바인딩하여 구현하는 법을 알 수 있었습니다. <br> 다음 구현시에는 좀 더 페르소나를 중심으로 기획을 하여 이해도 높은 앱을 구현하고 싶습니다. |
